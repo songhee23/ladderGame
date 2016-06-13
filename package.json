@@ -1,0 +1,21 @@
+{
+  "name": "ladder",
+  "version": "1.0.0",
+  "description": "laddergame",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "songhee",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.11.3",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-include-source": "^0.7.0",
+    "grunt-wiredep": "^2.0.0"
+  },
+  "dependencies": {
+    "bower": "^1.6.3"
+  }
+}
