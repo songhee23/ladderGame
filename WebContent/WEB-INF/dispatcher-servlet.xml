@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:p="http://www.springframework.org/schema/p" 
+	xmlns:context="http://www.springframework.org/schema/context" 
+	xsi:schemaLocation=" http://www.springframework.org/schema/beans 
+		http://www.springframework.org/schema/beans/spring-beans-3.0.xsd 
+		http://www.springframework.org/schema/context 
+		http://www.springframework.org/schema/context/spring-context-3.0.xsd">
+		
+	<bean id="dataSource" class="org.springframework.jdbc.datasource.SimpleDriverDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver" />
+        <property name="url" value="jdbc:mysql://localhost:3306/test?useUnicode=yes&amp;characterEncoding=UTF8&amp;autoReconnect=true&amp;autoReconnectForPools=true" />
+        <property name="username" value="root" />
+        <property name="password" value="java005$" />
+    </bean>
+    
+
+	<!-- DAO -->
+	<bean id="DAO" class="DAO.DAO">
+		<property name="dataSource" >
+			<ref bean="dataSource"/>
+		</property>
+	</bean>
+	
+	<!-- Controller -->
+	<!-- 리스트로 가는 Controller -->
+	<bean name="/userlist.htm" class="Controller.UserListController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean>
+	
+	
+	<bean name="/insertform.htm" class="Controller.InsertformController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean>
+	
+	
+	<bean name="/insert.htm" class="Controller.UserInsertController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean>
+	
+	
+	<bean name="/delete.htm" class="Controller.DeleteController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean>
+	
+	<bean name="/gameready.htm" class="Controller.GameReadyController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean>
+	
+	<bean name="/laddergo.htm" class="Controller.LadderController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean> 
+	
+	
+	<bean name="/result.htm" class="Controller.ResultController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean> 
+	
+	
+	<bean name="/lastgamelist.htm" class="Controller.LastGameListController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean> 
+		
+<!-- 	<bean name="/namesort.htm" class="Controller.UserListNameSortController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean>  -->
+ 	
+	<bean name="/namesort.htm" class="Controller.UserListNameSortController">
+		<property name="dao">
+			<ref bean="DAO"/>
+		</property>
+	</bean> 
+
+	
+</beans>

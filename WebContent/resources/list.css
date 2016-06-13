@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+
+.button1 {
+	color: white;
+	font-size: 16px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #3cb0fd;
+	margin-left: 270px;
+	padding: 5px;
+}
+
+.button1:HOVER {
+	background-color: #0c7094;
+}
+
+.button4 {
+	color: white;
+	font-size: 16px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #3cb0fd;
+	margin-left: 720px;
+	padding: 5px;
+}
+
+.button4:HOVER {
+	background-color: #0c7094;
+}
+
+.button2 {
+	color: red;
+	font-size: 16px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #9fa5a8;
+	padding: 5px;
+}
+
+.button2:HOVER {
+	background-color: #495154
+}
+
+.button3 {
+	color: white;
+	font-size: 25px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #3cb0fd;
+	margin-left: 350px;
+	padding: 20px
+}
+
+.button3:HOVER {
+	background-color: #0c7094;
+}
+
+body, p, div, span, input, select, textarea {
+	font-size: 18px;
+	color: #343;
+}
+
+table, td {
+	border: 1px solid gray;
+	border-collapse: collapse;
+	text-align: center
+}
+
+th {
+	border: 1px solid gray;
+	border-collapse: collapse;
+	text-align: center;
+	background-color: #D1E0E0;
+}
+
+table {
+	width: 800px;
+}
+
+.lineupbutton {
+	font-size: 18px;
+	color: #343;
+	background-color: #D1E0E0;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.notifyptag {
+	font-size: 12px;
+	color: red;
+	margin-left: 340px;
+}

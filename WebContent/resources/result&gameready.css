@@ -1,0 +1,62 @@
+@CHARSET "UTF-8";
+
+.button2 {
+	color: black;
+	font-size: 16px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #9fa5a8;
+	margin-left: 300px;
+	padding: 5px;
+}
+
+.button2:HOVER {
+	background-color: #495154
+}
+
+.button3 {
+	color: white;
+	font-size: 25px;
+	border-radius: 5px 5px 5px 5px;
+	background-color: #3cb0fd;
+	margin-left: 250px;
+	padding: 20px
+}
+
+.button3:HOVER {
+	background-color: #0c7094;
+}
+
+body, p, div, span, input, select, textarea {
+	font-size: 18px;
+	color: #343;
+	font-family: Malgun Gothic;
+}
+
+select {
+	font-size: 22px;
+	color: #343;
+	font-family: Malgun Gothic;
+}
+
+table, th, td {
+	border: 1px solid gray;
+	border-collapse: collapse;
+	text-align: center;
+}
+
+td {
+	height: 40px;
+}
+
+th {
+	height: 40px;
+	background-color: #D1E0E0;
+}
+
+table {
+	width: 550px;
+}
+
+.inputtext {
+	width: 80%;
+}
